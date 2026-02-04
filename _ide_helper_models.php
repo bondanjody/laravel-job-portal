@@ -15,8 +15,37 @@ namespace App\Models{
 /**
  * @property int $id
  * @property string $name
+ * @property string $image
+ * @property string $email
+ * @property string|null $email_verified_at
+ * @property string $password
+ * @property string|null $remember_token
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin whereEmailVerifiedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin whereImage($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin wherePassword($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin whereRememberToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Admin whereUpdatedAt($value)
+ */
+	class Admin extends \Eloquent {}
+}
+
+namespace App\Models{
+/**
+ * @property int $id
+ * @property string $name
+ * @property string $image
  * @property string $email
  * @property \Illuminate\Support\Carbon|null $email_verified_at
+ * @property string $role
  * @property mixed $password
  * @property string|null $remember_token
  * @property \Illuminate\Support\Carbon|null $created_at
@@ -33,9 +62,11 @@ namespace App\Models{
  * @method static \Illuminate\Database\Eloquent\Builder|User whereEmail($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereEmailVerifiedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereImage($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User wherePassword($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereRole($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  */
 	class User extends \Eloquent {}
